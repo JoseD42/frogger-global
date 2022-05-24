@@ -145,18 +145,226 @@ class Fondo(Modelo):
                 -0.8, -0.26, 0.0, 1.0,   255/255, 255/255, 255/255,1.0, #derecha arriba
                 -0.8, -0.24, 0.0, 1.0,  255/255, 255/255, 255/255,1.0, # derecha abajo
 
+                #Buzón azul
+                0.65,-0.37,0.0, 1.0,   61/255, 0/255, 198/255,1.0,  #izquierda arriba
+                0.65,-0.31,0.0, 1.0,   61/255, 0/255, 198/255,1.0,  #izquierda abajo
+                0.75,-0.37,0.0, 1.0,   61/255, 0/255, 198/255,1.0, #derecha arriba
+                0.75,-0.31,0.0, 1.0,  61/255, 0/255, 198/255,1.0, # derecha abajo
+               
+                #semaforo amarillo
+                -0.83,0.37,0.0, 1.0,   236/255, 240/255, 12/255,1.0,  #izquierda arriba
+                -0.83,0.31,0.0, 1.0,   236/255, 240/255, 12/255,1.0,  #izquierda abajo
+                -0.79,0.37,0.0, 1.0,   236/255, 240/255, 12/255,1.0, #derecha arriba
+                -0.79,0.31,0.0, 1.0,  236/255, 240/255, 12/255,1.0, # derecha abajo
+
+                #Focos banqueta arriba:
+                #Izquierdo
+                #base
+                -0.9,0.37,0.0, 1.0,   84/255, 88/255, 89/255,1.0,  #izquierda arriba
+                -0.9,0.31,0.0, 1.0,   84/255, 88/255, 89/255,1.0,  #izquierda abajo
+                -0.85,0.37,0.0, 1.0,  84/255, 88/255, 89/255,1.0, #derecha arriba
+                -0.85,0.31,0.0, 1.0,  84/255, 88/255, 89/255,1.0, # derecha abajo
+
+                #foco
+                -0.895,0.30,0.0, 1.0,   240/255, 242/255, 131/255,1.0,  #izquierda arriba
+                -0.895,0.265,0.0, 1.0,  240/255, 242/255, 131/255,1.0,  #izquierda abajo
+                -0.853,0.30,0.0, 1.0,  240/255, 242/255, 131/255,1.0, #derecha arriba
+                -0.853,0.265,0.0, 1.0,  240/255, 242/255, 131/255,1.0, # derecha abajo
+
+                #tubo
+                -0.89,0.39,0.0, 1.0,  43/255, 45/255, 46/255,1.0,  #izquierda arriba
+                -0.89,0.27,0.0, 1.0,  43/255, 45/255, 46/255,1.0,  #izquierda abajo
+                -0.86,0.39,0.0, 1.0,  43/255, 45/255, 46/255,1.0, #derecha arriba
+                -0.86,0.27,0.0, 1.0,  43/255, 45/255, 46/255,1.0, # derecha abajo
+
+                #Derecho
+                #base
+                0.9,0.37,0.0, 1.0,  236/255, 240/255, 12/255,1.0,  #izquierda arriba
+                0.9,0.31,0.0, 1.0,  236/255, 240/255, 12/255,1.0,  #izquierda abajo
+                0.85,0.37,0.0, 1.0,  236/255, 240/255, 12/255,1.0, #derecha arriba
+                0.85,0.31,0.0, 1.0,  236/255, 240/255, 12/255,1.0, # derecha abajo
+
+                #foco
+                0.895,0.30,0.0, 1.0,   237/255, 237/255, 237/255,1.0,  #izquierda arriba
+                0.895,0.265,0.0, 1.0,  237/255, 237/255, 237/255,1.0,  #izquierda abajo
+                0.853,0.30,0.0, 1.0,  237/255, 237/255, 237/255,1.0, #derecha arriba
+                0.853,0.265,0.0, 1.0,  237/255, 237/255, 237/255,1.0, # derecha abajo
+
+                #tubo
+                0.89,0.39,0.0, 1.0,  211/255, 214/255, 26/255,1.0,  #izquierda arriba
+                0.89,0.27,0.0, 1.0,  211/255, 214/255, 26/255,1.0,  #izquierda abajo
+                0.86,0.39,0.0, 1.0,  211/255, 214/255, 26/255,1.0, #derecha arriba
+                0.86,0.27,0.0, 1.0,  211/255, 214/255, 26/255,1.0, # derecha abajo
+
+                #Focos banqueta abajo:
+                #Izquierdo
+                #base
+                -0.9,-0.39,0.0, 1.0,   236/255, 240/255, 12/255,1.0,  #izquierda arriba
+                -0.9,-0.33,0.0, 1.0,   236/255, 240/255, 12/255,1.0,  #izquierda abajo
+                -0.85,-0.39,0.0, 1.0,  236/255, 240/255, 12/255,1.0, #derecha arriba
+                -0.85,-0.33,0.0, 1.0,  236/255, 240/255, 12/255,1.0, # derecha abajo
+
+                #foco
+                -0.895,-0.40,0.0, 1.0,   237/255, 237/255, 237/255,1.0,  #izquierda arriba
+                -0.895,-0.445,0.0, 1.0,  237/255, 237/255, 237/255,1.0,  #izquierda abajo
+                -0.853,-0.40,0.0, 1.0,  237/255, 237/255, 237/255,1.0, #derecha arriba
+                -0.853,-0.445,0.0, 1.0,  237/255, 237/255, 237/255,1.0, # derecha abajo
+
+                #tubo
+                -0.89,-0.44,0.0, 1.0,  211/255, 214/255, 26/255,1.0,  #izquierda arriba
+                -0.89,-0.31,0.0, 1.0,  211/255, 214/255, 26/255,1.0,  #izquierda abajo
+                -0.86,-0.44,0.0, 1.0,  211/255, 214/255, 26/255,1.0, #derecha arriba
+                -0.86,-0.31,0.0, 1.0,  211/255, 214/255, 26/255,1.0, # derecha abajo
+
+                #Derecho
+                #base
+                0.9,-0.39,0.0, 1.0,  84/255, 88/255, 89/255,1.0,  #izquierda arriba
+                0.9,-0.33,0.0, 1.0,  84/255, 88/255, 89/255,1.0,  #izquierda abajo
+                0.85,-0.39,0.0, 1.0,  84/255, 88/255, 89/255,1.0, #derecha arriba
+                0.85,-0.33,0.0, 1.0,  84/255, 88/255, 89/255,1.0, # derecha abajo
+
+                #foco
+                0.895,-0.40,0.0, 1.0,   240/255, 242/255, 131/255,1.0,  #izquierda arriba
+                0.895,-0.445,0.0, 1.0,  240/255, 242/255, 131/255,1.0,  #izquierda abajo
+                0.853,-0.40,0.0, 1.0,  240/255, 242/255, 131/255,1.0, #derecha arriba
+                0.853,-0.445,0.0, 1.0,  240/255, 242/255, 131/255,1.0, # derecha abajo
+
+                #tubo
+                0.89,-0.44,0.0, 1.0,  43/255, 45/255, 46/255,1.0,  #izquierda arriba
+                0.89,-0.31,0.0, 1.0,  43/255, 45/255, 46/255,1.0,  #izquierda abajo
+                0.86,-0.44,0.0, 1.0,  43/255, 45/255, 46/255,1.0, #derecha arriba
+                0.86,-0.31,0.0, 1.0,  43/255, 45/255, 46/255,1.0, # derecha abajo
+
+                #buzón rojo
+                -0.75,0.37,0.0, 1.0,  235/255, 64/255, 52/255,1.0,  #izquierda arriba
+                -0.75,0.31,0.0, 1.0,  235/255, 64/255, 52/255,1.0,  #izquierda abajo
+                -0.65,0.37,0.0, 1.0,  235/255, 64/255, 52/255,1.0, #derecha arriba
+                -0.65,0.31,0.0, 1.0,  235/255, 64/255, 52/255,1.0, # derecha abajo
 
                 
             ], dtype="float32"
 
         )
+        #Arbol arriba:
         for angulo in range(0, 359, 5):
             componente_x = 0.1 * math.cos(angulo * math.pi / 180) +.3
             componente_y = 0.065 * math.sin(angulo * math.pi / 180) -.08 +.42 
 
             self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
-                            66/255, 193/255, 42/255, 1.0 ], dtype="float32"))
+                            66/255, 193/255, 42/255, 1.0 ], dtype="float32"))   
 
+        for angulo in range(0, 359, 5):
+            componente_x = 0.065 * math.cos(angulo * math.pi / 180)  +.3
+            componente_y = 0.09 * math.sin(angulo * math.pi / 180) -.08 +.42 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            66/255, 193/255, 42/255, 1.0 ], dtype="float32"))  
+
+        #Arbol abajo
+        for angulo in range(0, 359, 5):
+            componente_x = 0.1 * math.cos(angulo * math.pi / 180)  -.29
+            componente_y = 0.065 * math.sin(angulo * math.pi / 180) -.08 -.29 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            182/255, 204/255, 4/255, 1.0 ], dtype="float32")) 
+
+        for angulo in range(0, 359, 5):
+            componente_x = 0.065 * math.cos(angulo * math.pi / 180)  -.29
+            componente_y = 0.09 * math.sin(angulo * math.pi / 180) -.08 -.29 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            182/255, 204/255, 4/255, 1.0 ], dtype="float32")) 
+
+        #Alcantarillas
+        for angulo in range(0, 359, 5):
+            componente_x = 0.06 * math.cos(angulo * math.pi / 180)  - 0.3
+            componente_y = 0.06 * math.sin(angulo * math.pi / 180) + 0.58 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            143/255, 145/255, 148/255, 1.0 ], dtype="float32"))
+
+        for angulo in range(0, 359, 5):
+            componente_x = 0.05 * math.cos(angulo * math.pi / 180)  - 0.3
+            componente_y = 0.05 * math.sin(angulo * math.pi / 180) + 0.58 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            175/255, 176/255, 179/255, 1.0 ], dtype="float32"))
+
+        for angulo in range(0, 359, 5):
+            componente_x = 0.06 * math.cos(angulo * math.pi / 180)  + 0.3
+            componente_y = 0.06 * math.sin(angulo * math.pi / 180) - 0.58 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            143/255, 145/255, 148/255, 1.0 ], dtype="float32"))
+
+        for angulo in range(0, 359, 5):
+            componente_x = 0.05 * math.cos(angulo * math.pi / 180)  + 0.3
+            componente_y = 0.05 * math.sin(angulo * math.pi / 180) - 0.58 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            0/255, 0/255, 0/255, 1.0 ], dtype="float32"))
+
+        #Buzon azul
+        for angulo in range(0, 182, 5):
+            componente_x = -0.045 * math.cos(angulo * math.pi / 180)  + 0.70
+            componente_y = -0.045 * math.sin(angulo * math.pi / 180) - 0.31 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            138/255, 152/255, 161/255, 1.0 ], dtype="float32"))
+
+        #Semaforo
+        for angulo in range(0, 182, 5):
+            componente_x = -0.021 * math.cos(angulo * math.pi / 180)  - 0.810
+            componente_y = -0.021 * math.sin(angulo * math.pi / 180) + 0.31 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            38/255, 38/255, 36/255, 1.0 ], dtype="float32"))
+
+        #pétalos
+        for angulo in range(0, 359, 5):
+            componente_x = 0.04 * math.cos(angulo * math.pi / 180)  + 0.15
+            componente_y = 0.012 * math.sin(angulo * math.pi / 180) -0.95 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            214/255, 214/255, 214/255, 1.0 ], dtype="float32"))
+
+        for angulo in range(0, 359, 5):
+            componente_x = 0.012 * math.cos(angulo * math.pi / 180)  + 0.15
+            componente_y = 0.04 * math.sin(angulo * math.pi / 180) -0.95 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            214/255, 214/255, 214/255, 1.0 ], dtype="float32"))
+
+        #centro
+        for angulo in range(0, 359, 5):
+            componente_x = 0.012 * math.cos(angulo * math.pi / 180)  + 0.15
+            componente_y = 0.012 * math.sin(angulo * math.pi / 180) -0.95 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            128/255, 112/255, 62/255, 1.0 ], dtype="float32"))
+
+        #pétalos arriba
+        for angulo in range(0, 359, 5):
+            componente_x = 0.04 * math.cos(angulo * math.pi / 180)  - 0.3
+            componente_y = 0.012 * math.sin(angulo * math.pi / 180) +0.95 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            214/255, 214/255, 214/255, 1.0 ], dtype="float32"))
+
+        for angulo in range(0, 359, 5):
+            componente_x = 0.012 * math.cos(angulo * math.pi / 180)  - 0.3
+            componente_y = 0.04 * math.sin(angulo * math.pi / 180) +0.95 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            214/255, 214/255, 214/255, 1.0 ], dtype="float32"))
+
+        #centro
+        for angulo in range(0, 359, 5):
+            componente_x = 0.012 * math.cos(angulo * math.pi / 180)  -0.3
+            componente_y = 0.012 * math.sin(angulo * math.pi / 180) +0.95 
+
+            self.vertices = np.append(self.vertices, np.array([componente_x, componente_y, 0.0 , 1.0, 
+                            128/255, 112/255, 62/255, 1.0 ], dtype="float32"))
 
         #crear una matriz identidad
         self.transformaciones = glm.mat4(1.0)
@@ -209,8 +417,40 @@ class Fondo(Modelo):
         gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 88, 4)
         gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 92, 4)
         gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 96, 4)
-        #gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 4, 4)
-        #gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 48, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 100, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 104, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 108, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 112, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 116, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 120, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 124, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 128, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 132, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 136, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 140, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 144, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 148, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 152, 4)
+        gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 156, 4)
+
+        #Circulos:
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 160, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 232, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 304, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 376, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 448, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 520, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 592, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 664, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 736, 37)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 773, 37)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 810, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 882, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 954, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 1026, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 1098, 72)
+        gl.glDrawArrays(gl.GL_TRIANGLE_FAN, 1170, 72)
+
 
         gl.glBindVertexArray(0)
         self.shader.liberar_programa()
