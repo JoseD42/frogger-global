@@ -4,13 +4,19 @@ import glm
 
 class Carros(Modelo):
     
-    def __init__(self,shader, posicion_id, color_id, transformaciones_id):
+    def __init__(self,shader, posicion_id, color_id, transformaciones_id, posicion_x, posicion_y, posicion_z, velocidad, direccion):
         self.ARRIBA = 1
         self.ABAJO = 2
         self.IZQUIERDA = 3
         self.DERECHA = 4
+        self.posicion.x = posicion_x
+        self.posicion.y = posicion_y
+        self.posicion.z = posicion_z
+        self.velocidad = velocidad
+        self.direcion = direccion
         self.posicion = glm.vec3(0.0,0.0,0.0)
-        self.vertices = np.array(
+        self.vertices = np.array({},dtype="float32")
+        self.vertices = np.append(self.vertices, np.array(
             [
                 #Carro naranja
                 #Chasis
@@ -81,7 +87,7 @@ class Carros(Modelo):
                 0.07,0.03,0.0,1.0,   0,0,0,1.0, # derecha abajo
 
             ], dtype="float32"
-        )
+        ))
 
 
         #crear una matriz identidad
@@ -90,7 +96,7 @@ class Carros(Modelo):
         #            glm.vec3(0.5,-0.2,0.0))
         #self.transformaciones = glm.rotate(self.transformaciones,
         #            45.0, glm.vec3(0.0,0.0,1.0))
-        super().__init__(shader, posicion_id, color_id, transformaciones_id)
+        super().__init__(shader, posicion_id, color_id, transformaciones_id, posicion_x, posicion_y, posicion_z, velocidad, direccion)
 
     def mover(self, direccion):
         
