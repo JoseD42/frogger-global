@@ -1,10 +1,10 @@
 import OpenGL.GL as gl
 import glfw
 import numpy as np
-from Nave import Nave
 from Fondo import *
 from Shader import *
 from Modelo import *
+from Carros import *
 from Rana import *
 from Triangulo import Triangulo
 
@@ -14,6 +14,7 @@ SCREEN_HEIGHT = 600
 modelo = None
 fondo = None
 rana = None
+carros = None
 window = None
 
 vertex_shader_source = ""
@@ -31,14 +32,17 @@ def dibujar():
     global modelo
     global fondo
     global rana
+    global carros
     fondo.dibujar()
     rana.dibujar()
+    carros.dibujar()
     #modelo.dibujar()
 
 def main():
     global modelo
     global fondo
     global rana
+    global carros
     global window
     glfw.init()
 
@@ -75,6 +79,9 @@ def main():
     rana = Rana(shader,
             posicion_id, color_id, transformaciones_id)
 
+    carros = Carros(shader,
+            posicion_id, color_id, transformaciones_id)
+
     glfw.set_key_callback(window, rana.actualizar)
 
     #draw loop
@@ -93,6 +100,7 @@ def main():
     modelo.borrar()
     fondo.borrar()
     rana.borrar()
+    carros.borrar()
     shader.borrar()
 
     
