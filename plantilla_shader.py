@@ -5,6 +5,7 @@ from Nave import Nave
 from Fondo import *
 from Shader import *
 from Modelo import *
+from Rana import *
 from Triangulo import Triangulo
 
 SCREEN_WIDTH = 800
@@ -12,6 +13,7 @@ SCREEN_HEIGHT = 600
 
 modelo = None
 fondo = None
+rana = None
 window = None
 
 vertex_shader_source = ""
@@ -24,22 +26,19 @@ with open('fragment_shader.glsl') as archivo:
 
 def actualizar():
     global window
-    estado_arriba = glfw.get_key(window, glfw.KEY_UP)
-    estado_abajo = glfw.get_key(window, glfw.KEY_DOWN)
-    if estado_arriba == glfw.PRESS:
-        modelo.mover(modelo.ARRIBA)
-    if estado_abajo == glfw.PRESS:
-        modelo.mover(modelo.ABAJO)
 
 def dibujar():
     global modelo
     global fondo
+    global rana
     fondo.dibujar()
+    rana.dibujar()
     #modelo.dibujar()
 
 def main():
     global modelo
     global fondo
+    global rana
     global window
     glfw.init()
 
@@ -73,10 +72,10 @@ def main():
     fondo = Fondo(shader, 
             posicion_id, color_id, transformaciones_id)
 
-    nave = Nave(shader,
+    rana = Rana(shader,
             posicion_id, color_id, transformaciones_id)
 
-    
+    glfw.set_key_callback(window, rana.actualizar)
 
     #draw loop
     while not glfw.window_should_close(window):
@@ -93,6 +92,7 @@ def main():
     #Liberar memoria
     modelo.borrar()
     fondo.borrar()
+    rana.borrar()
     shader.borrar()
 
     
